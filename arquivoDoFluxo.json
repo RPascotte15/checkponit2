@@ -1,0 +1,159 @@
+[
+    {
+        "id": "dadb490e0303312e",
+        "type": "watson-assistant-v2",
+        "z": "5a9f9e8e14c9b236",
+        "name": "assistente",
+        "service-endpoint": "https://api.au-syd.assistant.watson.cloud.ibm.com/instances/1dfcce59-fad8-47b8-a6bf-3803ee6d37e5",
+        "assistant_id": "ef804b19-7aad-4f0e-a4dd-4ec6a1202ca8",
+        "debug": false,
+        "restart": false,
+        "return_context": true,
+        "alternate_intents": false,
+        "multisession": false,
+        "timeout": "",
+        "optout-learning": false,
+        "persist-session-id": false,
+        "x": 660,
+        "y": 400,
+        "wires": [
+            [
+                "83dac2097c61d45c",
+                "5ede8d204e9d3807"
+            ]
+        ]
+    },
+    {
+        "id": "3f9cac9e9ae12adc",
+        "type": "telegram receiver",
+        "z": "5a9f9e8e14c9b236",
+        "name": "",
+        "bot": "15f92a8235375ec0",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "c5e22d8c28e5b2a7",
+                "b1d5784374075786"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1d56211f692d39ee",
+        "type": "telegram sender",
+        "z": "5a9f9e8e14c9b236",
+        "name": "",
+        "bot": "15f92a8235375ec0",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5e22d8c28e5b2a7",
+        "type": "debug",
+        "z": "5a9f9e8e14c9b236",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "83dac2097c61d45c",
+        "type": "debug",
+        "z": "5a9f9e8e14c9b236",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b1d5784374075786",
+        "type": "function",
+        "z": "5a9f9e8e14c9b236",
+        "name": "function 5",
+        "func": "// === Verificação de segurança inicial ====================================\nif (!msg?.payload) {\n  node.warn('msg.payload não encontrado.');\n  return null;\n}\n\nconst { chatId, type, content, options } = msg.payload;\n\n// === Armazena dados úteis no contexto de fluxo ===========================\nObject.assign(context.flow, { chatId, type });\n\n// === Prepara payload para envio final ====================================\n// Se houver opções (teclado inline), mantemos como objeto com reply_markup.\n// Se não houver, envia apenas o conteúdo como texto simples.\nmsg.payload = options\n  ? { chatId, type, content, options }\n  : content;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "dadb490e0303312e"
+            ]
+        ]
+    },
+    {
+        "id": "5ede8d204e9d3807",
+        "type": "function",
+        "z": "5a9f9e8e14c9b236",
+        "name": "function 6",
+        "func": "// === Metadados vindos do contexto =======================================\nconst { chatId, type } = context.flow;\n\n// === Primeira resposta genérica do Watson ===============================\nconst watsonResponse = msg?.payload?.output?.generic?.[0];\n\nif (!watsonResponse) {\n  node.warn('Nenhuma resposta genérica retornada pelo Watson.');\n  return null;\n}\n\n// === Constrói o payload conforme o tipo de resposta =====================\nswitch (watsonResponse.response_type) {\n  // ---------- Texto simples --------------------------------------------\n  case 'text':\n    msg.payload = {\n      chatId,\n      type,                         // mantém o mesmo tipo que veio do fluxo\n      content: watsonResponse.text, // texto a ser exibido\n    };\n    break;\n\n  // ---------- Opções com botões ----------------------------------------\n  case 'option':\n    msg.payload = {\n      chatId,\n      type   : 'message',           // telegram exige “message” para botões\n      content: watsonResponse.title,\n      options: {\n        reply_markup: {\n          inline_keyboard: watsonResponse.options.map(({ label, value }) => [\n            {\n              text         : label,\n              callback_data: value?.input?.text ?? label, // fallback seguro\n            },\n          ]),\n        },\n      },\n    };\n    break;\n\n  // ---------- Qualquer outro tipo --------------------------------------\n  default:\n    node.warn(`Tipo de resposta não tratado: ${watsonResponse.response_type}`);\n    return null;\n}\n\nreturn msg;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 400,
+        "wires": [
+            [
+                "1d56211f692d39ee"
+            ]
+        ]
+    },
+    {
+        "id": "15f92a8235375ec0",
+        "type": "telegram bot",
+        "botname": "cpmentoria_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    }
+]

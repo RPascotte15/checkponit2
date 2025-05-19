@@ -1,0 +1,1103 @@
+{
+  "intents": [
+    {
+      "intent": "comecaConversa",
+      "examples": [
+        {
+          "text": "Busco novas oportunidades para crescer profissionalmente no setor de tecnologia."
+        },
+        {
+          "text": "Desejo redirecionar minha carreira para uma área específica da tecnologia"
+        },
+        {
+          "text": "Estou em busca de aprimoramento e progressão na minha carreira tecnológica."
+        },
+        {
+          "text": "gostaria de ajuda"
+        },
+        {
+          "text": "gostaria de ajuda para encontrar uma carreira"
+        },
+        {
+          "text": "Gostaria de impulsionar minha carreira na área de tecnologia"
+        },
+        {
+          "text": "gostaria que me ajuda-se"
+        },
+        {
+          "text": "Meu objetivo é desenvolver minhas habilidades e avançar na minha trajetória em tecnologia."
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "ola"
+        },
+        {
+          "text": "ola gostaira que me ajuda-se em minha carreria na tecnologia"
+        },
+        {
+          "text": "preciso de ajuda"
+        },
+        {
+          "text": "Preciso de um up na minha carreira tech"
+        },
+        {
+          "text": "Quero dar um gás na minha carreira de tecnologia."
+        },
+        {
+          "text": "Quero expandir meus horizontes e alcançar novos patamares na minha jornada em tecnologia."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "explorar",
+      "examples": [
+        {
+          "text": "Almejo explorar as fronteiras da tecnologia."
+        },
+        {
+          "text": "Explorar áreas de tecnologia"
+        },
+        {
+          "text": "Meu objetivo é explorar o campo da tecnologia."
+        },
+        {
+          "text": "Quero explorar as áreas da tecnologia."
+        },
+        {
+          "text": "Tenho interesse em explorar os domínios da tecnologia."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "jasei",
+      "examples": [
+        {
+          "text": "Decidi o que busco."
+        },
+        {
+          "text": "Já saquei o que quero."
+        },
+        {
+          "text": "Já sei o que quero"
+        },
+        {
+          "text": "Sei exatamente o que desejo."
+        },
+        {
+          "text": "Tenho clareza sobre o meu objetivo."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "precisoAjuda",
+      "examples": [
+        {
+          "text": "Estou com dificuldades para decidir."
+        },
+        {
+          "text": "Estou precisando de uma mão para decidir."
+        },
+        {
+          "text": "Necessito de suporte na minha decisão."
+        },
+        {
+          "text": "Preciso de ajuda para decidir"
+        },
+        {
+          "text": "Preciso de auxílio para decidir."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "termino",
+      "examples": [
+        {
+          "text": "obrigado por ajudar"
+        },
+        {
+          "text": "Preciso encerrar a conversa."
+        },
+        {
+          "text": "Quero finalizar a nossa conversa."
+        },
+        {
+          "text": "terminar conversa"
+        },
+        {
+          "text": "Vou terminar a conversa."
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "analisar",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Analisar dados",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "analise",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Análise e Desenvolvimento de Sistemas",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ciencia",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ciência de Dados",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Desenvolvimento",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Desenvolvimento de Software",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "explorar",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Explorar áreas de tecnologia",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "interface",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Criar interfaces bonitas",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "jaSei",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Já sei o que quero",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mercado",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Saber o que o mercado pede",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "outros",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "outros",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "precisodeajuda",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Preciso de ajuda para decidir",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "procurar",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Procurar vagas na área",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "recomendados",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ver cursos recomendados",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Resolver",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Resolver problemas com lógica",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_5_1747137598018",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1747135418021",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1747135418028",
+      "previous_sibling": "handler_7_1747135418028"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_10_1747135418021",
+      "event_name": "input",
+      "dialog_node": "handler_7_1747135418028"
+    },
+    {
+      "type": "standard",
+      "title": "ja sei oque",
+      "output": {
+        "generic": [
+          {
+            "title": "Perfeito! Escolha abaixo o que deseja:",
+            "options": [
+              {
+                "label": "Procurar vagas na área",
+                "value": {
+                  "input": {
+                    "text": "Procurar vagas na área"
+                  }
+                }
+              },
+              {
+                "label": "Ver cursos recomendados",
+                "value": {
+                  "input": {
+                    "text": "Ver cursos recomendados"
+                  }
+                }
+              },
+              {
+                "label": "Saber o que o mercado pede",
+                "value": {
+                  "input": {
+                    "text": "Saber o que o mercado pede"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@jaSei || #jasei",
+      "dialog_node": "node_10_1747136031453",
+      "previous_sibling": "node_2_1747135443260"
+    },
+    {
+      "type": "standard",
+      "title": "preciso de ajuda",
+      "output": {
+        "generic": [
+          {
+            "title": "Vamos te ajudar com uma  pergunta rápida!",
+            "options": [
+              {
+                "label": "Resolver problemas com lógica",
+                "value": {
+                  "input": {
+                    "text": "Resolver problemas com lógica"
+                  }
+                }
+              },
+              {
+                "label": "Criar interfaces bonitas",
+                "value": {
+                  "input": {
+                    "text": "Criar interfaces bonitas"
+                  }
+                }
+              },
+              {
+                "label": "Analisar dados",
+                "value": {
+                  "input": {
+                    "text": "Analisar dados"
+                  }
+                }
+              },
+              {
+                "label": "Outros",
+                "value": {
+                  "input": {
+                    "text": "Outros"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@precisodeajuda || #precisoAjuda",
+      "dialog_node": "node_10_1747136136945",
+      "previous_sibling": "node_10_1747136031453"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A Ciência de Dados de Sistemas aplica métodos científicos para extrair conhecimento e insights acionáveis de dados gerados por sistemas computacionais. Envolve a coleta, processamento, análise e interpretação desses dados para otimizar o desempenho, prever falhas e melhorar a tomada de decisões em sistemas complexos. É uma área multidisciplinar que combina ciência da computação, estatística e conhecimento do domínio de sistemas."
+              },
+              {
+                "text": "1-Formação Cientista de Dados (EBAC Online)"
+              },
+              {
+                "text": "2-Carreira de Cientista de Dados (Alura)"
+              },
+              {
+                "text": "3-Trilha de Ciência de Dados (Data Science Academy)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Espero que tenha ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1747135443260",
+      "conditions": "@ciencia",
+      "dialog_node": "node_10_1747138453458",
+      "previous_sibling": "node_2_1747138273163"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Criar interfaces bonitas e intuitivas é crucial na tecnologia, pois a experiência do usuário impacta diretamente o sucesso de um produto. Para iniciar, foque em design de interface do usuário (UI) e experiência do usuário (UX). Pesquise sobre princípios de design visual, ferramentas de prototipagem (Figma, Adobe XD), guias de estilo e testes de usabilidade para construir interfaces atraentes e eficazes."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Espero que tenha ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1747136136945",
+      "conditions": "@interface",
+      "dialog_node": "node_10_1747160736853",
+      "previous_sibling": "node_7_1747160387321"
+    },
+    {
+      "type": "standard",
+      "title": "explorar",
+      "output": {
+        "generic": [
+          {
+            "title": "Ótimo! Escolha uma área que você tem interesse ou curiosidade:",
+            "options": [
+              {
+                "label": "Desenvolvimento de Software",
+                "value": {
+                  "input": {
+                    "text": "Desenvolvimento de Software"
+                  }
+                }
+              },
+              {
+                "label": "Análise e Desenvolvimento de Sistemas",
+                "value": {
+                  "input": {
+                    "text": "Análise e Desenvolvimento de Sistemas"
+                  }
+                }
+              },
+              {
+                "label": "Ciência de Dados",
+                "value": {
+                  "input": {
+                    "text": "Ciência de Dados"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@explorar || #explorar || @sys-number:3",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1747135443260",
+      "previous_sibling": "node_7_1747134372563"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A Análise e Desenvolvimento de Sistemas (ADS) é uma área da tecnologia focada na criação, implementação e manutenção de softwares e sistemas de informação. Envolve desde a identificação das necessidades do cliente até a entrega de soluções eficientes e inovadoras. Se você busca ingressar ou aprofundar seus conhecimentos nessa área promissora, confira 3 cursos online:"
+              },
+              {
+                "text": "1-Tecnólogo em Análise e Desenvolvimento de Sistemas (Cruzeiro do Sul Virtual)"
+              },
+              {
+                "text": "2-Análise e Desenvolvimento de Sistemas (Descomplica)"
+              },
+              {
+                "text": "3-Graduação em Análise e Desenvolvimento de Sistemas (FIAP Online)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Espero que tenha ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1747135443260",
+      "conditions": "@analise",
+      "dialog_node": "node_2_1747138273163",
+      "previous_sibling": "node_6_1747137078035"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O mercado de tecnologia clama por profissionais com habilidades em nuvem (Cloud), segurança cibernética, análise de dados e inteligência artificial (IA), além de desenvolvedores full-stack adaptáveis e com visão de negócios.\n\nPara acompanhar essas mudanças, você pode consultar os seguintes sites de notícias e blogs de tecnologia brasileiros:"
+              },
+              {
+                "text": "1-Canaltech"
+              },
+              {
+                "text": "2-TecMundo"
+              },
+              {
+                "text": "3-Olhar Digital"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Espero que tenha ajudado ",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1747136031453",
+      "conditions": "@mercado",
+      "dialog_node": "node_2_1747139252201",
+      "previous_sibling": "node_4_1747139227844"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A análise de dados na tecnologia transforma informações brutas em insights valiosos para otimizar sistemas, prever tendências e impulsionar decisões estratégicas. Para iniciar, foque em Python, SQL e ferramentas de visualização (como Tableau ou Power BI). Pesquise por \"cursos de análise de dados para iniciantes\", \"fundamentos de SQL para data science\" e \"introdução ao Python para análise de dados\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Espero que tenha ajudado",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1747136136945",
+      "conditions": "@analisar",
+      "dialog_node": "node_3_1747160888768",
+      "previous_sibling": "node_10_1747160736853"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aqui há algumas plataformas de cursos que podemos recomendar pra auxiliar em sua carreira"
+              },
+              {
+                "text": "1-Coursera"
+              },
+              {
+                "text": "2-Udemy"
+              },
+              {
+                "text": "3-Alura"
+              },
+              {
+                "text": "4-EBAC Online"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Espero que tenha ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "Explorar as área da tecnologia",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              }
+            ],
+            "description": "Visite nossa área de explorar as áreas da tecnologia",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1747136031453",
+      "conditions": "@recomendados",
+      "dialog_node": "node_4_1747139227844",
+      "previous_sibling": "node_8_1747139122811"
+    },
+    {
+      "type": "standard",
+      "title": "termino",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Gostaria de informar que a mentoria ira reseber atualizções futuras.Desde já agradeço sua utilização do nosso sistema."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Acredito ter te ajudado a encontrar seu caminho na tecnologia!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Termino da conversa",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#termino || @sys-number:2",
+      "dialog_node": "node_5_1747137598018",
+      "previous_sibling": "node_10_1747136136945"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A disciplina de Desenvolvimento de Software explora os princípios, técnicas e ferramentas essenciais para a criação de sistemas computacionais robustos e eficientes. Abrange desde a concepção e planejamento até a implementação, testes e manutenção de aplicações. Se você busca aprofundar seus conhecimentos nessa área dinâmica, aqui estão 3 cursos online que podem te interessar:"
+              },
+              {
+                "text": "1-Curso Desenvolvimento Web Completo 2023 (Udemy)"
+              },
+              {
+                "text": "2-Formação Desenvolvedor(a) Full Stack (EBAC Online): "
+              },
+              {
+                "text": "3-Carreira de Desenvolvedor Back-end com Python (Alura)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Espero que tenha ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1747135443260",
+      "conditions": "@Desenvolvimento",
+      "dialog_node": "node_6_1747137078035"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para iniciar na vasta área da tecnologia, explore seus interesses (desenvolvimento, dados, segurança, etc.) e comece com cursos online introdutórios e gratuitos em plataformas como Coursera ou Udemy. Pesquise por \"fundamentos de [área de interesse]\", \"introdução a [linguagem de programação]\" e \"conceitos básicos de [tecnologia]\"."
+              },
+              {
+                "text": "Você também pode acessar nossa área de explorar cursos dos quais podem interessa-lo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Espero que tenha ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "Explorar as área da tecnologia",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1747136136945",
+      "conditions": "@outros",
+      "dialog_node": "node_6_1747160953425",
+      "previous_sibling": "node_3_1747160888768"
+    },
+    {
+      "type": "standard",
+      "title": "iniciar",
+      "output": {
+        "generic": [
+          {
+            "title": "Olá!  Eu sou sua assistente de carreira em tecnologia. Vamos descobrir juntos qual caminho faz mais sentido pra você?",
+            "options": [
+              {
+                "label": "Explorar áreas de tecnologia",
+                "value": {
+                  "input": {
+                    "text": "Explorar áreas de tecnologia"
+                  }
+                }
+              },
+              {
+                "label": "Já sei o que quero",
+                "value": {
+                  "input": {
+                    "text": "Já sei o que quero"
+                  }
+                }
+              },
+              {
+                "label": "Preciso de ajuda para decidir",
+                "value": {
+                  "input": {
+                    "text": "Preciso de ajuda para decidir"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#comecaConversa || @sys-number:1",
+      "dialog_node": "node_7_1747134372563",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A lógica é a espinha dorsal da tecnologia, essencial para analisar desafios complexos e construir soluções eficientes em desenvolvimento de software, análise de dados e mais. Para iniciar, explore cursos de lógica de programação, algoritmos e estruturas de dados. Pesquise por \"fundamentos da programação\", \"pensamento computacional\" e \"resolução de problemas com algoritmos\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Espero que tenho ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Termino da conversa",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1747136136945",
+      "conditions": "@Resolver",
+      "dialog_node": "node_7_1747160387321"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Como nossos sistemas ainda estão em sua versão inicial, vamos direciona-los a sites confiaveis de procura de vagas na área\nSites com vagas:"
+              },
+              {
+                "text": "1-Vagas.com.br"
+              },
+              {
+                "text": "2-LinkedIn"
+              },
+              {
+                "text": "3-Glassdoor"
+              },
+              {
+                "text": "Plataformas Especializadas em Vagas de Tecnologia:"
+              },
+              {
+                "text": "1-GeekHunter"
+              },
+              {
+                "text": "2-Revelo"
+              },
+              {
+                "text": "3-Programathor"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Espero que tenha ajudado!",
+            "options": [
+              {
+                "label": "Voltar ao inicio",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "Ir ao final",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1747136031453",
+      "conditions": "@procurar",
+      "dialog_node": "node_8_1747139122811"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1747134372563",
+      "dialog_node": "slot_10_1747135418021"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "cp02"
+}
